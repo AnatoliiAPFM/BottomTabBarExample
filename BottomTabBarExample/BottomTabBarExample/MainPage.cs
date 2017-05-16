@@ -17,11 +17,12 @@ namespace BottomTabBarExample
                 Content =
                     new Label
                     {
-                        Text = "Page 1",
+                        Text = "Favorites Content",
                         HorizontalOptions = LayoutOptions.CenterAndExpand,
                         VerticalOptions = LayoutOptions.CenterAndExpand
                     },
-                Title = "Page 1"
+                Icon = "ic_favorites",
+                Title = "Favorites"
             });
 
             Children.Add(new ContentPage()
@@ -29,11 +30,12 @@ namespace BottomTabBarExample
                 Content =
                     new Label
                     {
-                        Text = "Page 2",
+                        Text = "Friends Content",
                         HorizontalOptions = LayoutOptions.CenterAndExpand,
                         VerticalOptions = LayoutOptions.CenterAndExpand
                     },
-                Title = "Page 2"
+                Icon = "ic_friends",
+                Title = "Friends"
             });
 
             Children.Add(new ContentPage()
@@ -41,16 +43,17 @@ namespace BottomTabBarExample
                 Content =
                     new Label
                     {
-                        Text = "Page 3",
+                        Text = "Nearby Content",
                         HorizontalOptions = LayoutOptions.CenterAndExpand,
                         VerticalOptions = LayoutOptions.CenterAndExpand
                     },
-                Title = "Page 3"
+                Icon = "ic_nearby",
+                Title = "Nearby"
             });
             NavigationPage.SetHasNavigationBar(this, true);
             ToolbarItems.Add(new ToolbarItem()
             {
-                Text = "Something"
+                Text = "TopCmd"
             });
         }
     }
